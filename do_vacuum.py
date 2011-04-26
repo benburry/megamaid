@@ -10,7 +10,7 @@ import megamaid
 #   where 'days' is an iterable of 0-indexed days, 0 being monday
 #   and 'tables' is an iterable of table names
 #
-TABLES_BY_DAY = {
+VACUUM_SCHEDULE = {
     (0,2,4)     : [
         'table1',
         'table2',
@@ -31,10 +31,10 @@ DATABASE = 'mydatabase'
 
 def main(configdump=False, dryrun=False):
     if not configdump:
-        megamaid.vacuum(database=DATABASE, table_config=TABLES_BY_DAY, dryrun=dryrun)
+        megamaid.vacuum(database=DATABASE, table_config=VACUUM_SCHEDULE, dryrun=dryrun)
     else:
         for day in xrange(7):
-            megamaid.vacuum(day_index=day, database=DATABASE, table_config=TABLES_BY_DAY, dryrun=True)
+            megamaid.vacuum(day_index=day, database=DATABASE, table_config=VACUUM_SCHEDULE, dryrun=True)
             
     return 0
 
