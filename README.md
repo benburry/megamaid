@@ -5,7 +5,7 @@ Hacky, nonrobust, little-bit-noddy, potentially destructive tool for running a c
 
 Usage
 -----
-do\_vacuum.py is the place to look for an example implementation. You need to call the megamaid.vacuum function with the target database name and a schedule for the tables you want vacuumed on each day of the week. The vacuum schedule format is described in megamaid.py
+do\_vacuum.py is the place to look for an example implementation. You need to call the _megamaid.vacuum_ function with the target database name and a schedule for the tables you want vacuumed on each day of the week. The vacuum schedule format is described in megamaid.py
 
 Once you have a schedule you're happy with, slap it in cron, redirecting stdout somewhere useful (perhaps somewhere that pgfouine can get to)
 
