@@ -16,4 +16,6 @@ Also, the megamaid.REMAINING\_TABLES function currently only works for tables in
 
 Disclaimers
 -----------
-This works for us, but it might well not work for you. I accept no responsibility if this does terrible, terrible things to your database
+This works for us, but it might well not work for you. I accept no responsibility if this does terrible, terrible things to your database.
+
+All credit to @barn for naming
